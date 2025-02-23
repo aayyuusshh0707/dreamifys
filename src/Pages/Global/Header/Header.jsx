@@ -6,27 +6,28 @@ import CustomButton from '../Button/Button';
 
 export default function Header({ title, subtitle, imageSection }) {
   return (
-    <Box sx={{ position: "relative", minHeight: "100vh", backgroundColor: "#121212", color: "#fff" }}>
+    <Box sx={{ position: "relative", minHeight: "100vh", backgroundColor: "#121212", color: "#fff", justifyContent: "center", alignContent: "center", display: "flex", flexDirection: "column" ,pt:{xs:7,md:0}}}>
       <Container sx={{ paddingBottom: "100px" }}>
-        <Grid container spacing={5} alignItems="center" justifyContent="center">
+        <Grid container spacing={ 4 } alignItems="center" justifyContent="center" flexDirection={{ xs: "column-reverse", md: "row" }}>
+
+
+
+          {/* Image Section (Dynamically Passed via Props) */}
+          <Grid item xs={12} md={5} my={6}>
+            {imageSection}
+          </Grid>
 
           {/* Info Section */}
           <Grid item xs={12} md={5}>
-            <Typography variant="h4" fontWeight={600} gutterBottom>
+            <Typography variant="h4" fontWeight={900} sx={{ color: "#ff5722"  , fontSize: { xs: "2rem", md: "3.3rem" }}} gutterBottom>
               {title}
             </Typography>
             <Typography variant="body1" gutterBottom>
               {subtitle}
             </Typography>
             <Box mt={2} display="flex" gap={2}>
-              <CustomButton text="View Courses" />
-              <CustomButton text="Book Demo" />
+             
             </Box>
-          </Grid>
-          
-          {/* Image Section (Dynamically Passed via Props) */}
-          <Grid item xs={12} md={5} my={6}>
-            {imageSection}
           </Grid>
 
         </Grid>

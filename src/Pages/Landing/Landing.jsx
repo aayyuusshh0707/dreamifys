@@ -1,12 +1,16 @@
 import React from 'react'
 import Herosection from './components/Herosection';
-import Institute from './components/Institute';
+// import Header from '../Global/Header/Header';
+// import Form from '../Global/Form/form';
+import Herosecond from './components/Herosecond';
+
 
 export default function Landing() {
   return (
     <>
       <Herosection />
-      <Institute />
+      <Herosecond />
+
     </>
   )
 }

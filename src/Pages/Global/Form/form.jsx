@@ -4,7 +4,7 @@ import { Grid, Typography, TextField, Button } from '@mui/material'
 export default function form() {
   return (
     <div>
-      <Grid size={{ xs: 12, md: 5 }} sx={{ backgroundColor: "#fff", color: "#000", p: 4, borderRadius: 2 }}>
+      <Grid sx={{ maxWidth: 400, backgroundColor: "#fff", color: "#000", p: 4, borderRadius: 2 }}>
         <Typography variant="h6" gutterBottom>
           Book a <span style={{ color: "#ff5722" }}>Call back now</span> to know more
         </Typography>
