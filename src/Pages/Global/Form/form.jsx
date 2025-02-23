@@ -6,7 +6,7 @@ export default function form() {
     <div>
       <Grid size={{ xs: 12, md: 5 }} sx={{ backgroundColor: "#fff", color: "#000", p: 4, borderRadius: 2 }}>
         <Typography variant="h6" gutterBottom>
-          Book a <span style={{ color: "#ff5722" }}>free live webinar</span> to know more
+          Book a <span style={{ color: "#ff5722" }}>Call back now</span> to know more
         </Typography>
         <TextField fullWidth label="Name" variant="outlined" margin="normal" required />
         <TextField fullWidth label="Email" type="email" variant="outlined" margin="normal" required />
