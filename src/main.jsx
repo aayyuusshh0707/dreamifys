@@ -1,24 +1,11 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import './index.css'
-// import App from './App.jsx'
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )
-
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
+import '@fontsource/mulish';
 
-// Import the Molish font
-import '@fontsource/mulish'; 
-
-// Create MUI theme with Molish font
 const theme = createTheme({
   typography: {
     fontFamily: 'Molish, sans-serif',
@@ -27,8 +14,10 @@ const theme = createTheme({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>
 );
