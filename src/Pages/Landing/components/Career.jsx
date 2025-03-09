@@ -46,7 +46,7 @@ function Career() {
 
         {/* Subheading */}
         <Typography variant="body1" color="text.secondary" maxWidth="md" mx="auto" mb={4}>
-          All of our programs come with <strong>exclusive Career Services</strong> that will equip you to 
+          All of our programs come with <strong>exclusive Career Services</strong> that will equip you to
           use your learnings and skills to ace your next interview or excel in your current role.
         </Typography>
 
@@ -83,10 +83,11 @@ function Career() {
 
         {/* Call to Action Button */}
         <Box mt={4}>
-          <Button variant="contained" sx={{ backgroundColor: "#ff5722",  px: 4 }}>
-            Book Your Trial, Now →
+          <Button variant="contained" sx={{ backgroundColor: "#ff5722", px: 4 }}>
+            Book Your Trial, Now
           </Button>
         </Box>
+
       </Container>
     </Box>
   );

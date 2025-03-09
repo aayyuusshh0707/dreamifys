@@ -56,6 +56,7 @@ function Projects() {
         </Typography>
 
         {/* Project Cards */}
+
         <Grid2 container spacing={3} justifyContent="center">
           {projects.map((project, index) => (
             <Grid2 key={index} size={{ xs: 12, sm: 6, md: 3.5 }}>

@@ -90,7 +90,7 @@ function Webinar() {
         {/* Call to Action Button */}
         <Box mt={4}>
           <Button variant="contained" sx={{ backgroundColor: "#ff5722", px: 4 }}>
-            Continue booking webinar →
+            Continue booking webinar
           </Button>
         </Box>
       </Container>

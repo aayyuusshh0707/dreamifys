@@ -13,7 +13,7 @@ export default function Header({ title, subtitle, imageSection }) {
 
 
           {/* Image Section (Dynamically Passed via Props) */}
-          <Grid item xs={12} md={5} my={6}>
+          <Grid item xs={12} md={5} >
             {imageSection}
           </Grid>
 
