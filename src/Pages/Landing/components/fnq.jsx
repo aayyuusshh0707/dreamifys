@@ -19,7 +19,7 @@ const faqs = [
 
 function FAQSection() {
   return (
-    <Container maxWidth="md">
+    <Container >
       <Box textAlign="center" py={4}>
         <Typography variant="h5" fontWeight="bold" mb={3}>
           Frequently Asked Questions

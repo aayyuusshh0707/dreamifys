@@ -22,18 +22,24 @@ export default function Coursescards() {
     { title: "Film Making", image: `${film}`, path: "/film-making", description: "The Advanced Filmmaking Program teaches scriptwriting, cinematography, directing, and editing to create compelling visual stories." },
     { title: "Graphics", image: `${Graphics}`, path: "/graphics", description: "The Advanced Graphic Design Program covers branding, typography, and digital design to create stunning visuals for print, web, and media." },
     { title: "Video Editing", image: `${video}`, path: "/video-editing", description: "The Advanced Video Editing Program teaches cutting, transitions, effects, and color correction to create professional-quality videos for films." },
-    { title: "Animation", image: `${Animation}`, path: "/video-editing", description: "The Advanced Video Editing Program teaches cutting, transitions, effects, and color correction to create professional-quality videos for films." },
+    {
+      title: "Animation",
+      image: `${Animation}`,
+      path: "/animation",
+      description: "The Advanced Animation Program covers motion graphics, character animation, and visual effects to bring creative ideas to life with industry-standard tools."
+    },
+
     {
       title: "UI/UX Design",
       image: `${uiux}`,
-      path: "/uiux",
+      path: "/ui-ux",
       description: "The Advanced UI/UX Design Program covers user research, wireframing, prototyping, and visual design to create engaging and user-friendly digital experiences."
     }
 
   ];
   return (
     <>
-      <Box sx={{ color: "#ff5722", fontSize: { xs: "2rem", md: "3.3rem" }, my: { xs: 2, md: 4 } }}>
+      <Box sx={{ color: "#ff5722", fontSize: { xs: "2rem", md: "3.3rem" }, mx: { xs: 2, md: 4 }, my: { xs: 2, md: 4 } }}>
         <Typography
           variant="h4"
           fontWeight={900}
@@ -83,7 +89,7 @@ export default function Coursescards() {
 
 
         </Box>
-       
+
       </Box>
     </>
   )
