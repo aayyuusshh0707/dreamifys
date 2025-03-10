@@ -8,21 +8,23 @@ import Download from './components/Download';
 import Webinar from './components/Webinar';
 import Career from './components/Career';
 import FAQSection from './components/fnq';
+import Courses from './components/Coursescards';
+
 // import ComparisonTable from './components/ComparisonTable';
 
 
 export default function Landing() {
   return (
-    <>
+    <>  
       <Herosection />
       <Herosecond />
-      <div style={{ width: '70%', margin: 'auto' }}>
         <Projects />
         <Download />
         <Webinar />
+        <Courses />
         <Career />
         <FAQSection />
-      </div>
+   
 
 
       {/* <ComparisonTable/> */}

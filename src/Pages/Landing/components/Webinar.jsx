@@ -25,13 +25,13 @@ const features = [
     icon: "🚀",
     title: "Get career support to break through into ambitious roles",
     description:
-      "Be prepared for every interview and exciting development jobs with structured planning and personalized guidance & support from Crio career coaches.",
+      "Be prepared for every interview and exciting development jobs with structured planning and personalized guidance & support from Dreamify career coaches.",
   },
   {
     icon: "🛠️",
     title: "Build a GitHub portfolio that impresses recruiters",
     description:
-      "Go beyond just certificates with a Crio verified project portfolio on GitHub and impress any recruiter at a product-based company with your skills and experience.",
+      "Go beyond just certificates with a Dreamify verified project portfolio on GitHub and impress any recruiter at a product-based company with your skills and experience.",
   },
   {
     icon: "🎯",
@@ -43,16 +43,16 @@ const features = [
 
 function Webinar() {
   return (
-    <Box sx={{  py: 6, textAlign: "center" }}>
+    <Box sx={{ py: 10, textAlign: "center" }}>
       <Container>
         {/* Heading */}
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           An All-Round Effective Way To Supercharge Your Tech Career
         </Typography>
         <Typography variant="body1" color="text.secondary" maxWidth="md" mx="auto" mb={4}>
-          <strong>Hands-on, work experience-based learning</strong> is at the heart of everything you do at Crio. 
-          Build software projects like the top 1% Tech Professionals and 
-          <strong> learn all the skills</strong> you need to <strong>land the best</strong> Fullstack/Backend 
+          <strong>Hands-on, work experience-based learning</strong> is at the heart of everything you do at Dreamify.
+          Build software projects like the top 1% Tech Professionals and
+          <strong> learn all the skills</strong> you need to <strong>land the best</strong> Fullstack/Backend
           Developers or SDET Jobs.
         </Typography>
 
@@ -68,6 +68,7 @@ function Webinar() {
                   textAlign: "left",
                   boxShadow: 2,
                   height: "100%",
+                  border: "1px solid orange",
                 }}
               >
                 {/* Icon */}
@@ -88,11 +89,7 @@ function Webinar() {
         </Grid2>
 
         {/* Call to Action Button */}
-        <Box mt={4}>
-          <Button variant="contained" sx={{ backgroundColor: "#ff5722", px: 4 }}>
-            Continue booking webinar
-          </Button>
-        </Box>
+   
       </Container>
     </Box>
   );

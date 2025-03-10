@@ -40,16 +40,7 @@ function FAQSection() {
           </Accordion>
         ))}
 
-        <Grid container spacing={2} justifyContent="center" mt={3}>
-          <Grid item xs={12} sm={6} md={3}>
-            <Button  variant="outlined" fullWidth>Payment options</Button>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Button sx={{
-              backgroundColor: "#E64A19",
-            }} variant="contained" fullWidth>Book a free webinar</Button>
-          </Grid>
-        </Grid>
+       
       </Box>
     </Container>
   );

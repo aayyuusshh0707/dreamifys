@@ -2,8 +2,10 @@ import React from "react";
 import { Container, Typography, Box } from "@mui/material";
 import Button from "../../Global/Button/Button";
 import CustumButton from "../../Global/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const Herosection = () => {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -36,7 +38,9 @@ const Herosection = () => {
       <Typography variant="body1" sx={{ opacity: 0.8, mb: 3 }}>
         Structured courses that get you there faster with confidence.
       </Typography>
-      <CustumButton text="Explore Courses" />
+      <Box >
+        <CustumButton text="Explore Courses" onClick={() => navigate("/courses")} />
+      </Box>
       <Box
         component="video"
         controls

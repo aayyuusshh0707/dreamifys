@@ -41,7 +41,7 @@ function Career() {
       <Container>
         {/* Heading */}
         <Typography variant="h4" fontWeight="bold" gutterBottom>
-          Prepare To Break Through <br /> Into Top Tech Jobs <br /> In The Market
+          Prepare To Break Through  Into Top Tech Jobs <br /> In The Market
         </Typography>
 
         {/* Subheading */}
@@ -84,7 +84,7 @@ function Career() {
         {/* Call to Action Button */}
         <Box mt={4}>
           <Button variant="contained" sx={{ backgroundColor: "#ff5722", px: 4 }}>
-            Book Your Trial, Now
+            Explore Career Services, Now
           </Button>
         </Box>
 

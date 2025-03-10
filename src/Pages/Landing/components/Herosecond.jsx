@@ -4,8 +4,10 @@ import { Typography, Box, Container } from "@mui/material";
 import Wave from '../../../assets/Header/wave.png';
 import CustomButton from '../../Global/Button/Button';
 import Form from '../../Global/Form/form';
+import { useNavigate } from "react-router-dom";
 
 export default function Herosecond() {
+  const navigate = useNavigate();
   return (
     <>
       <Box sx={{ position: "relative", minHeight: "100vh", backgroundColor: "#121212", color: "#fff", justifyContent: "center", alignContent: "center", display: "flex", flexDirection: "column" }}>
@@ -21,8 +23,8 @@ export default function Herosecond() {
                 We have a track record of maintaining 100% job placement with every batch. Dreamifys has worked hard day in and day out to reach these notable organizations, most of which are our partner companies.
               </Typography>
               <Box mt={2} display="flex" gap={2}>
-                <CustomButton text="View Courses" />
-                <CustomButton text="Apply Now" />
+                <CustomButton text="View Courses" onClick={() => navigate("/courses")} />
+                <CustomButton text="Join Now" onClick={() => navigate("/signin")} />
 
               </Box>
             </Grid>

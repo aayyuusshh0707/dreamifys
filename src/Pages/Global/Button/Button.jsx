@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button as MuiButton } from '@mui/material';
 
-export default function CustomButton({ text = "Join Now" }) {
+export default function CustomButton({ text = "Join Now" , onClick }) {
   return (
     <MuiButton
       variant="contained"
+      onClick={onClick}
       sx={{
         backgroundColor: "#E64A19",
         padding: { xs: "8px 16px", sm: "10px 20px", md: "12px 24px" }, // Responsive Padding
