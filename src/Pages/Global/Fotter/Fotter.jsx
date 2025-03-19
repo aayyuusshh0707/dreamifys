@@ -34,7 +34,7 @@ export default function Footer() {
             <Typography variant="h6" fontWeight="bold">
             Dreamifys
             </Typography>
-            {["Careers", "Privacy policy", "Terms & conditions", "Pricing & refund policy", "Review", "Press release"].map((item) => (
+            {["Careers", "Privacy policy", "Terms & conditions"].map((item) => (
               <Typography key={item} variant="body2" sx={{ mt: 1 }}>
                 <Link href="#" color="inherit" underline="none">
                   {item}

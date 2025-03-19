@@ -2,28 +2,30 @@ import React from "react";
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Paper, Container } from "@mui/material";
 
 const data = [
-  { feature: "Real work experience", video: "✖", bootcamp: "✖", Dreamify: "✔" },
-  { feature: "True, project-based learning", video: "✖", bootcamp: "✖", Dreamify: "✔" },
-  { feature: "Live sessions & mentorship", video: "✖", bootcamp: "✔", Dreamify: "✔" },
-  { feature: "Job-ready portfolio", video: "✖", bootcamp: "✖", Dreamify: "✔" },
-  { feature: "Externship with top companies", video: "✖", bootcamp: "✖", Dreamify: "✔" },
-  { feature: "Career guidance", video: "✖", bootcamp: "✔", Dreamify: "✔" },
-  { feature: "Assured Referrals", video: "✖", bootcamp: "✖", Dreamify: "✔" },
+  { feature: "Real work experience", Dreamify: "✔" },
+  { feature: "True, project-based learning",   Dreamify: "✔" },
+  { feature: "Live sessions & mentorship",  Dreamify: "✔" },
+  { feature: "Job-ready portfolio",   Dreamify: "✔" },
+  { feature: "Externship with top companies", Dreamify: "✔" },
+  { feature: "Career guidance", Dreamify: "✔" },
+  { feature: "Assured Referrals",   Dreamify: "✔" },
 ];
 
 const ComparisonTable = () => {
   return (
     <Box sx={{ p: 4, textAlign: "center" }}>
-      <Container>
+           <Typography sx={{my: { xs: 2, md: 4 }}} variant="h4" fontWeight="bold" gutterBottom>
+                Why Choose Dreamify
+              </Typography>
+      <Container maxWidth="md">
         <TableContainer component={Paper} sx={{ borderRadius: 2, overflow: "hidden" }}>
           <Table>
             {/* Table Header */}
             <TableHead>
-              <TableRow sx={{ backgroundColor: "#3FD1AE" }}>
+              <TableRow sx={{ backgroundColor: "#ff5722" }}>
                 <TableCell sx={{ fontWeight: "bold", color: "white" }}>Feature</TableCell>
-                <TableCell align="center" sx={{ fontWeight: "bold", color: "white" }}>Video Courses</TableCell>
-                <TableCell align="center" sx={{ fontWeight: "bold", color: "white" }}>Bootcamps</TableCell>
-                <TableCell align="center" sx={{ fontWeight: "bold", color: "white", backgroundColor: "#FFEFAA" }}>Dreamifys</TableCell>
+                
+                <TableCell align="center" sx={{ fontWeight: "bold", color: "white" }}>Dreamifys</TableCell>
               </TableRow>
             </TableHead>
 
@@ -31,10 +33,8 @@ const ComparisonTable = () => {
             <TableBody>
               {data.map((row, index) => (
                 <TableRow key={index} sx={{ backgroundColor: index % 2 === 0 ? "#F7FAF9" : "white" }}>
-                  <TableCell>{row.feature}</TableCell>
-                  <TableCell align="center" sx={{ color: row.video === "✔" ? "green" : "red" }}>{row.video}</TableCell>
-                  <TableCell align="center" sx={{ color: row.bootcamp === "✔" ? "green" : "red" }}>{row.bootcamp}</TableCell>
-                  <TableCell align="center" sx={{ color: row.Dreamify === "✔" ? "green" : "red", backgroundColor: "#FFEFAA" }}>
+                   <TableCell>{row.feature}</TableCell>
+                  <TableCell align="center" sx={{ color: row.Dreamify === "✔" ? "green" : "red", backgroundColor: "white" }}>
                     {row.Dreamify}
                   </TableCell>
                 </TableRow>

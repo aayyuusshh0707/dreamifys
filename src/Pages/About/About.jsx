@@ -6,13 +6,11 @@ import {
   TextRevealCardDescription,
   TextRevealCardTitle,
 } from "../Global/aceternity/ui/text-reveal-card";
-
-
-
+//import AppleCardsCarouselDemo from './components/Animatedcards';
 export default function About() {
   return (
-    <>
 
+    <>
       <Header title="ABOUT US" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem aliquid? Soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem aliquid? Soluta" imageSection={<img src={about} alt="about" />} />
 
 
@@ -29,6 +27,8 @@ export default function About() {
           </TextRevealCardDescription>
         </TextRevealCard>
       </div>
+
+      {/* <AppleCardsCarouselDemo /> */}
 
 
 

@@ -81,13 +81,6 @@ function Career() {
           ))}
         </Grid2>
 
-        {/* Call to Action Button */}
-        <Box mt={4}>
-          <Button variant="contained" sx={{ backgroundColor: "#ff5722", px: 4 }}>
-            Explore Career Services, Now
-          </Button>
-        </Box>
-
       </Container>
     </Box>
   );

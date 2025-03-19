@@ -18,9 +18,14 @@ export default function Nav() {
           </Link>
 
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Link to="/signin">
+            <Link to="#">
               <button type="button" className="text-white bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
-                Sign in
+                Book a free demo
+              </button>
+            </Link>
+            <Link to="/signin">
+              <button type="button" className="text-white bg-orange-500 focus:ring-4 mx-1.5 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                Admin
               </button>
             </Link>
 
@@ -45,20 +50,23 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                < Link to="/about" className="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500">
-                  About
-                </Link>
-              </li>
-              <li>
                 <Link to="/courses" className="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500">
                   Courses
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link to="/jobs" className="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500">
                   Placements
                 </Link>
-              </li> */}
+              </li>
+         
+
+              <li>
+                < Link to="/about" className="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500">
+                  About
+                </Link>
+              </li>
+
               <li>
                 <Link to="/contact" className="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500">
                   Contact

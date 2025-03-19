@@ -9,22 +9,24 @@ import Webinar from './components/Webinar';
 import Career from './components/Career';
 import FAQSection from './components/fnq';
 import Courses from './components/Coursescards';
+//import { Features } from './components/Feature';
 
-// import ComparisonTable from './components/ComparisonTable';
+import ComparisonTable from './components/ComparisonTable';
 
 
 export default function Landing() {
   return (
-    <>  
+    <>
       <Herosection />
       <Herosecond />
-        <Projects />
-        <Download />
-        <Webinar />
-        <Courses />
-        <Career />
-        <FAQSection />
-   
+      <Projects />
+      <Download />
+      <Webinar />
+      <Courses />
+      <ComparisonTable />
+      <Career />
+      <FAQSection />
+
 
 
       {/* <ComparisonTable/> */}

@@ -3,13 +3,14 @@ import { Container, Typography, Box } from "@mui/material";
 import Button from "../../Global/Button/Button";
 import CustumButton from "../../Global/Button/Button";
 import { useNavigate } from "react-router-dom";
+import video from '../../../assets/video/Intro.mp4'
 
 const Herosection = () => {
   const navigate = useNavigate();
   return (
     <Box
       sx={{
-        minHeight: "100vh",
+        minHeight: "100%",
         backgroundColor: "#121212",
         color: "white",
         display: "flex",
@@ -42,13 +43,17 @@ const Herosection = () => {
         <CustumButton text="Explore Courses" onClick={() => navigate("/courses")} />
       </Box>
       <Box
+
         component="video"
+        autoPlay
+        muted
         controls
+        
         width="90%"
         maxWidth="800px"
         sx={{ mt: 3, borderRadius: "10px" }}
       >
-        <source src="/path-to-demo-video.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </Box>
     </Box>

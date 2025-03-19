@@ -27,7 +27,8 @@ function RequestCall() {
               <Typography variant="h5" sx={{ fontSize: { xs: '1.4rem', md: '1.6rem' }, fontWeight: 'bold', mb: 3, textAlign: 'center' }}>
                 Request a call from our counselors.
               </Typography>
-              <Form btntext='Request callback' />
+              <div style={{ display: 'flex', justifyContent: 'center' }}>   <Form btntext='Request callback' /></div>
+           
             </Paper>
           </Grid>
         </Grid>
