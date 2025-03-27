@@ -13,7 +13,7 @@ export default function Courses() {
       <Outlet />
       <Header
         title="COURSES"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem aliquid? Soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem aliquid? Soluta"
+        subtitle="Our company offers industry-focused courses in Full-Stack Development, Frontend, Backend, UI/UX Design, and Data Structures & Algorithms, providing hands-on learning with real-world projects to enhance career growth in technology. 🚀"
         imageSection={<Form />}
       />
       <Offerings />

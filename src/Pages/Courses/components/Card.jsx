@@ -21,7 +21,8 @@ const offerings = [
   { title: "Web Development", image: `${web}`, path: "/web-development", description: "The Advanced Web Development Program covers front-end and back-end technologies to build dynamic, responsive websites." },
   { title: "Video Editing", image: `${video}`, path: "/video-editing", description: "The Advanced Video Editing Program teaches cutting, transitions, effects, and color correction to create professional-quality videos for films." },
   { title: "UI/UX", image: `${uiux}`, path: "/ui-ux", description: "The Advanced UI/UX Design Program covers user research, and design principles to create intuitive and engaging digital experiences." },
-  { title: "Digital Marketing", image: `${digital}`, path: "/digital-marketing", description: "The Advanced Digital Marketing Program covers SEO, social media, content marketing, and analytics to drive online growth and engagement." }
+  { title: "Digital Marketing", image: `${digital}`, path: "/digital-marketing", description: "The Advanced Digital Marketing Program covers SEO, social media, content marketing, and analytics to drive online growth and engagement." },
+  // { title: "Digital Marketing", image: `${digital}`, path: "/digital-marketing", description: "The Advanced Digital Marketing Program covers SEO, social media, content marketing, and analytics to drive online growth and engagement." }
 ];
 
 function Offerings() {

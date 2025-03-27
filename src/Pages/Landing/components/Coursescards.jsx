@@ -48,13 +48,13 @@ export default function Coursescards() {
         >
           OUR COURSES
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 3 }}>
+        <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap:1 }}>
           {offerings.map((offering, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
 
               <CardContainer className="inter-var">
                 <CardBody
-                  className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                  className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-auto rounded-xl p-6 border  ">
                   <CardItem
                     translateZ="50"
                     className=" text-3xl font-bold  dark:text-white">

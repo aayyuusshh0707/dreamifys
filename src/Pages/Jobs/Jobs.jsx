@@ -16,14 +16,14 @@ export default function Jobs() {
     <>
       <Header
         title="EXPLORE JOBS"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem aliquid? Soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem aliquid? Soluta"
+        subtitle="Discover exciting job opportunities with our extensive network of hiring partners. We connect skilled professionals with top companies, ensuring the right fit for career growth and success. "
         imageSection={<img src={Job} alt="job" />}
       />
       <HeroSection />
       <HowItWorks />
-      {/* <AboutUs />
+      <AboutUs />
       <CitiesWeServe />
-      <SuccessStories /> */}
+      {/* <SuccessStories />  */}
       <RequestCall/>
       
     

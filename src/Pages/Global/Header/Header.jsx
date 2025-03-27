@@ -6,15 +6,15 @@ import CustomButton from '../Button/Button';
 
 export default function Header({ title, subtitle, imageSection }) {
   return (
-    <Box sx={{ position: "relative", minHeight: "100vh", backgroundColor: "#121212", color: "#fff", justifyContent: "center", alignContent: "center", display: "flex", flexDirection: "column" ,pt:{xs:7,md:0}}}>
+    <Box sx={{ position: "relative", minHeight: "100%", backgroundColor: "#121212", color: "#fff",paddingBottom: "50px", justifyContent: "center", alignContent: "center", display: "flex", flexDirection: "column" ,pt:{xs:7,md:0}}}>
       <Container sx={{ paddingBottom: "100px" }}>
         <Grid container spacing={ 4 } alignItems="center" justifyContent="center" flexDirection={{ xs: "column-reverse", md: "row" }}>
 
-
-
           {/* Image Section (Dynamically Passed via Props) */}
-          <Grid item xs={12} md={5} >
+          {/* hide in mobile */}
+          <Grid item xs={12} md={5} sx={{ display: { xs: "none", md: "block" } }}>
             {imageSection}
+         
           </Grid>
 
           {/* Info Section */}

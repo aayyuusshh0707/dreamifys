@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Typography, TextField, Button } from '@mui/material'
 
-export default function form() {
+export default function Form() {
   return (
     <div>
       <Grid sx={{ maxWidth: 400,  backgroundColor: "#fff", color: "#000", p: 4, borderRadius: 2 }}>

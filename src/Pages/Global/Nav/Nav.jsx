@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../../../assets/Logo/logo2.png';
 import { Link } from 'react-router-dom';
+import Model from '../Model/Model'
+import Form from '../Form/form';
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,15 +21,16 @@ export default function Nav() {
 
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <Link to="#">
-              <button type="button" className="text-white bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+            <Model text='Book a free demo' form={<Form/>}/>
+              {/* <button type="button" className="text-white bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
                 Book a free demo
-              </button>
+              </button> */}
             </Link>
-            <Link to="/signin">
+            {/* <Link to="/signin">
               <button type="button" className="text-white bg-orange-500 focus:ring-4 mx-1.5 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
                 Admin
               </button>
-            </Link>
+            </Link> */}
 
             <button
               type="button"

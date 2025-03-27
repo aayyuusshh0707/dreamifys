@@ -24,7 +24,6 @@ export default function Herosecond() {
               </Typography>
               <Box mt={2} display="flex" gap={2}>
                 <CustomButton text="View Courses" onClick={() => navigate("/courses")} />
-                <CustomButton text="Join Now" onClick={() => navigate("/signin")} />
 
               </Box>
             </Grid>
