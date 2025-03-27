@@ -10,7 +10,7 @@ export default function Herosecond() {
   const navigate = useNavigate();
   return (
     <>
-      <Box sx={{ position: "relative", minHeight: "100vh", backgroundColor: "#121212", color: "#fff", justifyContent: "center", alignContent: "center", display: "flex", flexDirection: "column" }}>
+      <Box sx={{ position: "relative", minHeight: "100vh", backgroundColor: "#121212", color: "#fff", justifyContent: "center", alignContent: "center", display: "flex", flexDirection: "column" , pt:{xs:7,md:0}, paddingBottom: "50px"}}>
         <Container sx={{ paddingBottom: "100px" }}>
           <Grid container spacing={5} alignItems="center" justifyContent="center">
 

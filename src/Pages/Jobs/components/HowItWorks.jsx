@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@mui/material';
+import { Container , Typography } from '@mui/material';
 
 const HowItWorks = () => {
   return (
@@ -9,9 +9,17 @@ const HowItWorks = () => {
         <h1 className="text-[#ff5722] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
           How Dreamifys Works
         </h1>
-        <p className="text-[#181511] text-xl  font-normal leading-normal ">
-          With  Dreamifys, you can find a job that's right for you. Our platform makes it easy to search for jobs in your city and explore companies that are hiring.
-        </p>
+        <Typography
+          variant="body1"
+          sx={{
+           
+            color: "#181511",
+            fontSize: { xs: "1rem", sm: "1.2rem" },
+            mb: 5,
+          }}
+        >
+          With Dreamifys, you can find a job that's right for you. Our platform makes it easy to search for jobs in your city and explore companies that are hiring.
+        </Typography>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
         <div className="flex flex-1 gap-3 rounded-lg border border-[#e6e1db] bg-white p-4 flex-col">
