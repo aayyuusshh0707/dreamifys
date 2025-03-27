@@ -6,7 +6,7 @@ import phone from '../../../assets/bg/mobile.png';
 
 function RequestCall() {
   return (
-    <Box sx={{ backgroundColor: "#fff6f3",  pb:5}}>
+    <Box sx={{ backgroundColor: "#fff6f3",  pb:{xs: 5, md: 0 } }}>
       <Container>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           {/* Image Grid */}

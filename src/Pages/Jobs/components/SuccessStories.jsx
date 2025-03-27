@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from '@mui/material';
 
 const SuccessStories = () => {
   const stories = [
@@ -10,8 +11,11 @@ const SuccessStories = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10 px-4 py-10 @container">
-      <h2 className="text-[#181511] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Success Stories</h2>
+    <Container>
+    <div className="flex flex-col gap-10  py-10 @container">
+    <h1 className="text-[#ff5722] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+      Success Stories
+        </h1>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
         {stories.map((story, index) => (
           <div key={index} className="flex flex-col gap-3 pb-3">
@@ -27,6 +31,7 @@ const SuccessStories = () => {
         ))}
       </div>
     </div>
+    </Container>
   );
 };
 
