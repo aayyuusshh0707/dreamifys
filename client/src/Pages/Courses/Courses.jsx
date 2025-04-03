@@ -4,7 +4,7 @@ import Header from '../Global/Header/Header';
 import Form from '../Global/Form/form';
 import Offerings from './components/Card';
 import Testimonials from './components/Testimonials';
-import courses from '../../assets/Header/courses.png';  
+import courses from '../../assets/Header/Courses.png';  
 import Admissionssection from './components/AdmissionsSection';
 
 export default function Courses() {
