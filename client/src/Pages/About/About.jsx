@@ -22,11 +22,6 @@ export default function About() {
       <Verify/>
       {/* <CourseTimeline /> */}
       <Team/>
-
-
-
-
-
     </>
   )
 }
